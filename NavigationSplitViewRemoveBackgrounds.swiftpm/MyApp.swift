@@ -33,7 +33,11 @@ struct AppView: View {
 				.scrollContentBackground(.hidden)
 				.navigationTransition(.slide)
 			} detail: {
-				Text("Test View")
+				if let selectedItem {
+					Text(selectedItem.name)
+				} else {
+					Text("No item selected")
+				}
 			}
 			.tint(.white)
 			.introspect(.navigationSplitView, on: .iOS(.v17)) { split in
