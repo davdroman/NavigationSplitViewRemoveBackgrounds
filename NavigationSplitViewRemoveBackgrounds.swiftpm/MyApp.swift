@@ -4,11 +4,11 @@ import SwiftUIIntrospect
 
 @main
 struct App: SwiftUI.App {
-    var body: some Scene {
-        WindowGroup {
+	var body: some Scene {
+		WindowGroup {
 			AppView()
-        }
-    }
+		}
+	}
 }
 
 struct Item: Hashable, Identifiable {
